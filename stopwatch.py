@@ -1,3 +1,5 @@
+import time
+
 class Stopwatch:
     def __init__(self):
         self.start_time = 0
@@ -22,3 +24,4 @@ class Stopwatch:
     def elapsed(self):
         if self.running:
             return time.time() - self.start_time
+        return 0
